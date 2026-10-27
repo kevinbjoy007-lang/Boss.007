@@ -1,0 +1,159 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberShield | Security Awareness</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #0b1120;
+            color: #f1f5f9;
+        }
+
+        header {
+            padding: 24px;
+            text-align: center;
+            background: #111c32;
+            border-bottom: 2px solid #38bdf8;
+        }
+
+        header h1 {
+            color: #38bdf8;
+            margin-bottom: 8px;
+        }
+
+        main {
+            max-width: 760px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+
+        .card {
+            background: #172338;
+            border-radius: 16px;
+            padding: 28px;
+            margin-bottom: 24px;
+            border: 1px solid #334155;
+        }
+
+        h2 {
+            color: #7dd3fc;
+        }
+
+        button {
+            padding: 12px 18px;
+            margin: 6px 4px 6px 0;
+            border: 0;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 15px;
+            background: #38bdf8;
+            color: #082f49;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background: #7dd3fc;
+        }
+
+        #result {
+            margin-top: 18px;
+            line-height: 1.7;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            color: #94a3b8;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>🛡️ CyberShield</h1>
+        <p>Think Before You Click</p>
+    </header>
+
+    <main>
+        <section class="card">
+            <h2>Welcome to CyberShield</h2>
+
+            <p>
+                Learn how to recognise phishing attempts,
+                suspicious links and online scams.
+            </p>
+
+            <p>
+                This website is an educational demonstration.
+                It never requests or collects passwords.
+            </p>
+        </section>
+
+        <section class="card">
+            <h2>🔍 Phishing Awareness Quiz</h2>
+
+            <p>
+                You receive an unexpected message claiming
+                your account will be closed unless you click
+                a link immediately. What should you do?
+            </p>
+
+            <button onclick="answer('A')">
+                Click immediately
+            </button>
+
+            <button onclick="answer('B')">
+                Check through the official website
+            </button>
+
+            <button onclick="answer('C')">
+                Reply with my password
+            </button>
+
+            <div id="result" aria-live="polite"></div>
+        </section>
+
+        <section class="card">
+            <h2>🚨 Warning Signs</h2>
+
+            <ul>
+                <li>Unexpected urgent messages</li>
+                <li>Misspelled or misleading website addresses</li>
+                <li>Requests for passwords or verification codes</li>
+                <li>Unfamiliar attachments</li>
+                <li>Offers that seem too good to be true</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        CyberShield · Cybersecurity Education
+    </footer>
+
+    <script>
+        function answer(choice) {
+            const result = document.getElementById("result");
+
+            if (choice === "B") {
+                result.textContent =
+                    "Correct! Visit the official website directly " +
+                    "and check your account without using the message link.";
+            } else {
+                result.textContent =
+                    "Not safe! Don't click unexpected links or share " +
+                    "passwords. Verify the message through an official channel.";
+            }
+        }
+    </script>
+</body>
+</html>
+```
